@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f8f8f8;
+  background: #121212;
   font-family: "Poppins", sans-serif;
 }
 
@@ -26,13 +26,20 @@ body {
     display: block;
   }
   .body {
-    background: white;
-    color: black;
+    background: rgb(0, 132, 255);
+    color: white;
     padding: 25px;
     display: flex;
     .counter {
       cursor: pointer;
       user-select: none;
+      padding: 0.25rem 1rem;
+      background: rgba($color: #000000, $alpha: 0.1);
+      transition: background 100ms ease-in-out;
+      border-radius: 5px;
+      &:hover {
+        background: rgba($color: #000000, $alpha: 0.2);
+      }
       &.likes {
         margin-right: 1rem;
       }

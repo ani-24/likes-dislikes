@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f8f8f8;
+  background: #121212;
   font-family: "Poppins", sans-serif;
 }
 
@@ -26,8 +26,8 @@ body {
   display: block;
 }
 .card .body {
-  background: white;
-  color: black;
+  background: #0084ff;
+  color: white;
   padding: 25px;
   display: flex;
 }
@@ -37,6 +37,13 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  padding: 0.25rem 1rem;
+  background: rgba(0, 0, 0, 0.1);
+  transition: background 100ms ease-in-out;
+  border-radius: 5px;
+}
+.card .body .counter:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 .card .body .counter.likes {
   margin-right: 1rem;
