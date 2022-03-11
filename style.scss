@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
 
+:root {
+  --theme-clr: rgb(0, 129, 119);
+}
+
 *,
 *::before,
 *::after {
@@ -26,7 +30,7 @@ body {
     display: block;
   }
   .body {
-    background: rgb(0, 132, 255);
+    background: var(--theme-clr);
     color: white;
     padding: 25px;
     display: flex;
